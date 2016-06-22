@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head><title>jquery problem 1</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+  $("p").first().click(function(){
+    $("p").eq(2).hide();
+	 $("p").eq(1).show();
+}); 
+    $("p").dblclick(function(){
+   $("p").eq(1).hide();
+    $("p").eq(2).show();
+}); 
+});
+    </script>
+    </head>
+<body>
+<p>Click me!</p>
+</body>
+For single click append the following paragraph :
+<p>This is a click Event</p><br>
+For double-click append the following paragraph :
+<p>This is a double-click Event</p>
+</body>
+</html>
